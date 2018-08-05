@@ -1,0 +1,62 @@
+
+
+<%= form_for userform do |f| %>
+<table>
+<tr>
+     <td><%= f.label :name %></td>
+     <td><%= f.text_field :name %></td>
+</tr>
+
+<tr>
+     <td><%= f.label :email %> </td>
+     <td><%= f.text_field :email %> </td>
+</tr>
+
+<tr>
+    <td><%= f.label :password %> </td>
+    <td><%= f.text_field :password %></td>
+</tr>
+
+<tr>
+    <td><%= f.label :confirmpassword %></td>
+    <td><%= f.text_field :confirmpassword %></td>
+</tr>
+
+<tr>
+   <td><%= f.label :mobilenumber %></td>
+   <td><%= f.text_field :mobilenumber %></td>
+</tr>
+
+<tr>
+    <td><%= f.label :gender %></td>
+    <td><%= f.text_field :gender %></td>
+</tr>
+
+<tr>
+    <td><%= f.label :adhaarnumber %></td>
+    <td><%= f.text_field :adhaarnumber %></td>
+</tr>
+
+<tr>
+    <td><%= f.label :pincode %></td>
+    <td><%= f.text_field :pincode %></td>
+</tr>
+
+<tr>
+    <td><%= f.label :martialstatus %></td>
+    <td><%= f.text_field :martialstatus %></td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td> <%= f.submit("Submit") %> </td>
+</tr>
+
+</table>
+
+<% end %>

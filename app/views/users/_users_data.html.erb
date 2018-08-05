@@ -1,0 +1,41 @@
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Mobilenumber </th>
+    <th>Gender </th>
+    <th>AdhaarNUmber</th>
+    <th>Pincode</th>
+    <th>MartialStatus</th>
+  </tr>
+
+</thead>
+
+<tbody>
+
+<% usersdata.each do |userdata| %>
+<tr>
+
+<td><%= userdata.name %></td>
+<td><%= userdata.email %></td>
+<td><%= userdata.mobilenumber %></td>
+<td><%= userdata.gender %></td>
+<td><%= userdata.adhaarnumber %></td>
+<td><%= userdata.pincode %></td>
+<td><%= userdata.martialstatus %></td>
+<td><%= link_to 'Edit' , edit_user_path(userdata) %></td>
+<td><%= link_to 'Delete' , userdata , method: :delete , data: {confirm: "Are you sure"} %> </td>
+
+
+
+<% end %>
+
+</tbody>
+
+
+
+
+
+
+</table>
