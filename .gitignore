@@ -21,3 +21,8 @@
 /yarn-error.log
 
 .byebug_history
+
+
+# dont push secret file in git ignore
+
+/config/secrets.yml
