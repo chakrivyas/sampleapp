@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def index
 
+
   @users = User.all
   @application_title = "Users Page"
   @x = " This is instance variable x";

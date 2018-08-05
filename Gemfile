@@ -33,8 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+ gem 'pry'
 
-gem 'byebug'
+#gem 'byebug'
 
 
 group :development, :test do
